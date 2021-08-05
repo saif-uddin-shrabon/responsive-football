@@ -1,0 +1,257 @@
+body{
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Recursive', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+        /*---------------
+          Top Bacground 
+        ----------------*/
+.top-banner{
+    background-color:#2D25A0 ;
+    background-size: cover;
+}
+
+        /* ------------------
+          Navigation bar CSS
+        --------------------- */
+.topnav a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+}
+.topnav .login-container{
+    float: right;
+}
+.login-container a{
+    background-color: #E02C6D ;
+    font-size: 15px;
+    border-radius: 5%;
+}
+
+#mobile-menu{
+    visibility: hidden;
+}
+
+            /* ---------------------------
+            Titel & Animation part CSS
+            ------------------------------ */
+.top-div-1{
+    width: 40%;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+.top-div-2 img{
+  height: 700px;
+  width: 700px;
+  padding-top: 60px ;
+}
+.caption{
+    color: #FFFFFF;
+    font-size: 60px;   
+}
+.watch-live{
+    text-decoration: none;
+    background-color: #E02C6D ;
+    color: #FFFFFF;
+    padding: 10px 10px;
+    margin-left: 5px;
+}
+
+.flex-container{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+            /* ----------------
+               Players Part Css
+            ------------------ */
+/* .second-part{
+    margin: 50px;
+} */
+
+.big-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    margin-left: 50px;
+}
+.players{
+    background-color: #FFFFFF;
+    width: 330px;
+    height: 474px;
+    box-shadow:0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    overflow: hidden;
+}
+.players img{
+    margin: 10px;
+    border-radius: 10px;
+    width: 94%;
+}
+h2,p{
+    margin-left: 10px;
+}
+                /* ------------
+                    Footer
+                --------------- */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    margin-top: 158px;
+    margin-bottom: 30px;
+}
+.footer-div img{
+     height: 150px;
+     width: 400px;
+}
+
+.fa-facebook{
+    font-size: 35px;
+    color: #2D25A0;
+    margin-left: 130px;
+}
+.fa-instagram{
+    font-size: 35px;
+    margin-left: 10px;
+    color: #833AB4;
+}
+.fa-youtube {
+    font-size: 35px;
+    margin-left: 10px;
+    color: #FF0000;;
+}
+.fa-twitter{
+    font-size: 35px;
+    margin-left: 10px;
+    color: #1DA1F2;
+}
+footer{
+    margin-top: 15px;
+     font-weight: 550;
+    font-size: 20px;
+    margin-left: 70px;
+}
+
+
+
+/* ------------------------------------------------------
+                            Responsive CSS
+--------------------------------------------------------- */
+
+                    /* Mobile Device */
+
+@media only screen and (max-width: 688px) {
+    .top-banner{
+        width: 100%;
+      }
+   /*----------------
+         1st Part
+    ------------------*/
+    .flex-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-div-1{
+        width: 40%;
+        margin-left: 5%;
+        padding-left: 4%;
+    }
+    .top-div-2 img{
+      height: 350px;
+      width: 350px;
+      /* justify-content: center;
+      align-items: center; */
+    }
+    
+    .topnav{
+        visibility: hidden;
+    }
+    #mobile-menu{
+        visibility: visible;
+    }
+    .login-container{
+        visibility: visible;
+    }
+
+   /* ------------
+         2nd Part
+    --------------- */
+    .big-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+                    /* ------------
+                    Footer
+                --------------- */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    margin-top: 158px;
+    margin-bottom: 30px;
+}
+.footer-div img{
+    height: 150px;
+    width: 300px;
+}
+   
+}
+
+                /* Tab Device */
+
+@media only screen and (min-width:688px ) and (max-width:1366px){
+    .top-banner{
+        width: 100%;
+      }
+      /* --------------
+           1st Part
+        --------------- */
+   
+    .flex-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .top-div-1{
+        width: 40%;
+        margin-left: 5%;
+        padding-left: 4%;
+    }
+    .top-div-2 img{
+      height: 350px;
+      width: 350px;
+      
+    }
+    .topnav a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    /* ------------
+         2nd Part
+    --------------- */
+    .big-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+                 /* ------------
+                    Footer
+                --------------- */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    margin-top: 158px;
+    margin-bottom: 30px;
+}
+}
