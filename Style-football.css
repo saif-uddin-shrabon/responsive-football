@@ -162,6 +162,9 @@ h2,p{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+.Podcast{
+    margin-left: 35px;
+}
 
 #pc{
     display: flex;
