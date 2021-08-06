@@ -457,6 +457,22 @@ footer{
  #p-style{
      font-size: 25px;
  }
+                 /* Podcast & Newslatter */
+                
+                
+.pd-news{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.subscribe{
+    margin: 10% 0% 5% 25%;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 10px rgb(0, 0, 0.5) ;
+}
                  /* ------------
                     Footer
                 --------------- */
