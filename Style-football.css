@@ -49,6 +49,11 @@ body{
   height: 700px;
   width: 700px;
   padding-top: 60px ;
+
+}
+.top-div-2 img:hover{ 
+   transform: rotateZ(40deg);
+   transition: transform 3s;
 }
 .caption{
     color: #FFFFFF;
@@ -168,7 +173,7 @@ h2,p{
     color: #fff;
 }
 .subscribe{
-      margin: 10% 0% 5% 25%;
+      margin: 20% 0% 5% 25%;
       max-width: 500px;
       width: 100%;
       border-radius: 12px;
